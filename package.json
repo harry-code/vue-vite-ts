@@ -37,8 +37,11 @@
     }
   },
   "lint-staged": {
-    "**/*.{vue,ts,ts,json}": [
+    "**/*.{vue,js,json}": [
       "prettier --write"
+    ],
+    "*.ts?(x)": [
+      "prettier --parser=typescript --write"
     ]
   },
   "config": {
