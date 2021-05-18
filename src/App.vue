@@ -1,7 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
   <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
-  this is app
+  this is app a
 </template>
 
 <script lang="ts">
