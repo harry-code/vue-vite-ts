@@ -1,7 +1,12 @@
 <template>
-  <a-button type="primary"> Primary </a-button>
+  <!-- <a-button type="primary"> Primary </a-button>
   <a-button>Default</a-button>
-  <DatePicker />
+  <DatePicker /> -->
+  <div id="app">
+    <div class="content">
+      <span>this is less</span>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -18,13 +23,10 @@ export default defineComponent({
 });
 </script>
 
-<style>
+<style lang="less">
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  .content {
+    font-size: 0.16rem; // 16px
+  }
 }
 </style>

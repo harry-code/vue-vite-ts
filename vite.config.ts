@@ -15,10 +15,22 @@ export default defineConfig({
         modifyVars: {},
       },
     },
+    postcss: {
+      plugins: [],
+    },
   },
   resolve: {
     alias: {
       '~': resolve(__dirname, 'src'),
     },
+  },
+  server: {
+    port: 8000, // 启动端口
+    open: true,
+    proxy: {
+      // 选项写法
+      '/api': 'http://www.baidu.com', // 代理网址
+    },
+    cors: true,
   },
 });

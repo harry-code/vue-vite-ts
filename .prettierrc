@@ -8,7 +8,7 @@
       "options": { "parser": "json" }
     }
   ],
-  bracketSpacing: true,
-  jsxBracketSameLine: true,
-  arrowParens: 'avoid',
+  "bracketSpacing": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid"
 }
