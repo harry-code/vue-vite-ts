@@ -25,6 +25,10 @@
     "vue-router": "^4.0.8",
     "vue-tsc": "^0.0.24"
   },
+  "gitHooks": {
+    "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
+    "pre-commit": "lint-staged"
+  },
   "lint-staged": {
     "*.{vue,less,md,json}": [
       "prettier --write"
@@ -32,21 +36,5 @@
     "*.ts?(x)": [
       "prettier --parser=typescript --write"
     ]
-  },
-  "commitlint": {
-    "extends": [
-      "@commitlint/config-conventional"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog"
-    }
   }
 }
