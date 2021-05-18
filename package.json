@@ -8,6 +8,7 @@
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s"
   },
   "dependencies": {
+    "ant-design-vue": "^2.1.2",
     "vue": "^3.0.5"
   },
   "devDependencies": {
@@ -16,6 +17,8 @@
     "@types/node": "^15.3.0",
     "@vitejs/plugin-vue": "^1.2.2",
     "@vue/compiler-sfc": "^3.0.5",
+    "axios": "^0.21.1",
+    "babel-plugin-import": "^1.13.3",
     "commitizen": "^4.2.4",
     "conventional-changelog-cli": "^2.1.1",
     "cz-conventional-changelog": "^3.3.0",
