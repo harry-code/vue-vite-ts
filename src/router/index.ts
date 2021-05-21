@@ -1,20 +1,12 @@
-import { createRouter, createWebHistory } from 'vue-router';
-const Login = () => import('~/views/login/index.vue');
+import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router';
+import LoginRoutes from './modules/login';
+import ErrorRoutes from './modules/error';
 
 const historyMode = createWebHistory();
 
 const router = createRouter({
   history: historyMode,
-  routes: [
-    {
-      path: '/login',
-      component: Login,
-    },
-    {
-      path: '/',
-      component: {},
-    },
-  ],
+  routes: [...LoginRoutes, ...ErrorRoutes],
 });
 
 export default router;
