@@ -1,24 +1,16 @@
 <template>
-  <!-- <a-button type="primary"> Primary </a-button>
-  <a-button>Default</a-button>
-  <DatePicker /> -->
   <div id="app">
-    <div class="content">
-      <span>this is less</span>
-    </div>
+    <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import HelloWorld from './components/AjaxPromise.vue';
 
 export default defineComponent({
   name: 'App',
   data() {},
-  components: {
-    HelloWorld,
-  },
+  components: {},
   setup: () => {},
 });
 </script>
